@@ -1,0 +1,62 @@
+{
+  "name": "fastify-status",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "config": {
+    "releaseBranch": "master"
+  },
+  "scripts": {
+    "changelog": "changelog -u https://gitlab.com/m03geek/server-status",
+    "check-branch": "if test \"$(git rev-parse --abbrev-ref HEAD)\" = \"$npm_package_config_releaseBranch\" ; then exit 0 ; else  echo \"Not on '$npm_package_config_releaseBranch' branch\" && exit1 ; fi",
+    "lint": "eslint .",
+    "postversion": "git push && git push --tags",
+    "preversion": "npm run check-branch && npm run lint && npm run unit",
+    "test": "npm audit && npm run lint && npm run unit",
+    "unit": "exit 0",
+    "version": "changelog && git add -u",
+    "pub": "npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkeLLLa/fastify-status.git"
+  },
+  "keywords": [
+    "fastify",
+    "status",
+    "plugin",
+    "fastify-plugin",
+    "server-status"
+  ],
+  "author": "m03geek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/m03geek/fastify-status/issues"
+  },
+  "homepage": "https://gitlab.com/m03geek/fastify-status#README",
+  "dependencies": {
+    "@m03geek/server-status": "^1.0.0",
+    "fastify-plugin": "^1.2.0"
+  },
+  "directories": {
+    "test": "__tests__",
+    "lib": "lib"
+  },
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.ts"
+  ],
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.4",
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1",
+    "fastify": "^1.9.0",
+    "generate-changelog": "^1.7.1",
+    "jest": "^23.4.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "description": ""
+}
