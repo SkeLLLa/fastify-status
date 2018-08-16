@@ -1,3 +1,9 @@
+#### 1.0.2 (2018-08-16)
+
+##### Chores
+
+* **docs:**  add description ([40a7e068](https://github.com/SkeLLLa/fastify-status/commit/40a7e068f62340a1fed6d7c980145c938848c571))
+
 #### 1.0.1 (2018-08-16)
 
 ##### Chores
