@@ -58,5 +58,5 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "description": ""
+  "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring."
 }

@@ -6,7 +6,7 @@
 [![Build Status](https://gitlab.com/m03geek/fastify-status/badges/master/pipeline.svg)](https://gitlab.com/m03geek/fastify-status/commits/master)
 [![License](https://img.shields.io/npm/l/fastify-status.svg)](https://gitlab.com/m03geek/fastify-status/blob/master/LICENSE)
 
-Returns common info about node.js server. Could be used for
+Returns common info about fastify server. Could be used for healthchecks and status monitoring.
 
 ## ToC
 
