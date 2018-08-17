@@ -1,3 +1,9 @@
+#### 1.0.5 (2018-08-17)
+
+##### Continuous Integration
+
+*  export token ([bc55492c](https://github.com/SkeLLLa/fastify-status/commit/bc55492c8b7f9e8addfaa101cc6c4cf6abd8e0c2))
+
 #### 1.0.4 (2018-08-17)
 
 ##### Continuous Integration
