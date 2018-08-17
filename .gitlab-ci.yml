@@ -54,8 +54,9 @@ node:latest:
 npm:
   stage: publish
   script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
     - npm ci
-    - NPM_TOKEN=${NPM_TOKEN} npm publish --access=public
+    - npm publish --access=public
   environment:
     name: npm
     url: https://www.npmjs.com/package/${CI_PROJECT_NAME}
