@@ -1,3 +1,9 @@
+#### 1.0.6 (2018-08-17)
+
+##### Continuous Integration
+
+*  revert token ([9b88945e](https://github.com/SkeLLLa/fastify-status/commit/9b88945ee670230f13db7c5e800636c4146c289c))
+
 #### 1.0.5 (2018-08-17)
 
 ##### Continuous Integration
