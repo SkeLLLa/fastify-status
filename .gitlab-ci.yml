@@ -55,7 +55,7 @@ npm:
   stage: publish
   script:
     - npm ci
-    - npm publish --access=public
+    - NPM_TOKEN=${NPM_TOKEN} npm publish --access=public
   environment:
     name: npm
     url: https://www.npmjs.com/package/${CI_PROJECT_NAME}
