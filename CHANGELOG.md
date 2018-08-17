@@ -1,3 +1,9 @@
+#### 1.0.4 (2018-08-17)
+
+##### Continuous Integration
+
+*  remove npmrc ([69d7afa6](https://github.com/SkeLLLa/fastify-status/commit/69d7afa6d3a23b907f37ec40c45d397a9d7b6857))
+
 #### 1.0.3 (2018-08-17)
 
 ##### Bug Fixes
