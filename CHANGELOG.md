@@ -1,3 +1,9 @@
+#### 1.0.3 (2018-08-17)
+
+##### Bug Fixes
+
+* **options:**  fix options defaults ([4a7a5693](https://github.com/SkeLLLa/fastify-status/commit/4a7a5693f5c63cdc8b0991a4f5d1ecd3d3a4f477))
+
 #### 1.0.2 (2018-08-16)
 
 ##### Chores
