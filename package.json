@@ -34,7 +34,7 @@
   },
   "homepage": "https://gitlab.com/m03geek/fastify-status#README",
   "dependencies": {
-    "@m03geek/server-status": "^1.1.0",
+    "@m03geek/server-status": "^1.1.1",
     "fastify-plugin": "^1.2.1"
   },
   "directories": {
