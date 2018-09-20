@@ -1,3 +1,9 @@
+#### 1.1.1 (2018-09-20)
+
+##### Bug Fixes
+
+* **env:**  place env to runtime ([5abb2e8c](https://github.com/SkeLLLa/fastify-status/commit/5abb2e8c04ca4c73496d2339dc53a02db09bd6a8))
+
 #### 1.1.0 (2018-09-20)
 
 ##### Chores
