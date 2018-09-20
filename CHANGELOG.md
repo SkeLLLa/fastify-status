@@ -1,3 +1,13 @@
+#### 1.1.0 (2018-09-20)
+
+##### Chores
+
+* **deps:**  update eslint ([34b03c36](https://github.com/SkeLLLa/fastify-status/commit/34b03c369c1dab1d1c987f6dcbe379bb7fadbaaa))
+
+##### New Features
+
+* **deps:**  update deps ([b9cceccc](https://github.com/SkeLLLa/fastify-status/commit/b9cceccc1ec672253c99f3ae65fe6f651db03d72))
+
 #### 1.0.6 (2018-08-17)
 
 ##### Continuous Integration
