@@ -35,7 +35,7 @@
   "homepage": "https://gitlab.com/m03geek/fastify-status#README",
   "dependencies": {
     "@m03geek/server-status": "^1.1.1",
-    "fastify-plugin": "^1.2.1"
+    "fastify-plugin": "^1.6.0"
   },
   "directories": {
     "test": "__tests__",
@@ -47,13 +47,13 @@
   ],
   "private": false,
   "devDependencies": {
-    "@types/jest": "^23.3.2",
-    "@types/node": "^10.10.1",
-    "eslint": "^5.6.0",
-    "eslint-config-google": "^0.10.0",
-    "fastify": "^1.11.2",
-    "generate-changelog": "^1.7.1",
-    "jest": "^23.6.0"
+    "@types/jest": "^23.3.14",
+    "@types/node": "^10.17.9",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "fastify": "^1.14.6",
+    "generate-changelog": "^1.8.0",
+    "jest": "^24.6.0"
   },
   "engines": {
     "node": ">=8.0.0"
