@@ -1,3 +1,9 @@
+#### 1.1.2 (2019-12-14)
+
+##### Chores
+
+* **deps:**  update ([4e1728b7](https://github.com/SkeLLLa/fastify-status/commit/4e1728b7c344fe5ff7c85ee1f15e726031fc3b53))
+
 #### 1.1.1 (2018-09-20)
 
 ##### Bug Fixes
