@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://gitlab.com/m03geek/fastify-status/compare/v2.0.0...v2.0.1) (2020-05-10)
+
+### Bug Fixes
+
+- **stats:** stats calc fix ([a2bd1e8](https://gitlab.com/m03geek/fastify-status/commit/a2bd1e8585eee3b4e450a5bf54ecf7a9a1ad9ca2))
+
 ## [2.0.0](https://gitlab.com/m03geek/fastify-status/compare/v1.1.2...v2.0.0) (2020-05-10)
 
 ### ⚠ BREAKING CHANGES
