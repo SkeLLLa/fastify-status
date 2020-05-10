@@ -23,7 +23,7 @@ codestyle:
 
 node:12:
   stage: test
-  image: node:10
+  image: node:12
   only:
     - /^v\d+\.\d+\.\d+(-rc.\d+|)$/
   script:
