@@ -1,5 +1,11 @@
 .idea
 node_modules
 coverage
-config/local.*
+logs
+*.log
+npm-debug.log*
 **/*.xxx.js
+.npm
+.DS_Store
+static/*
+!static/.*

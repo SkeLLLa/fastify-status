@@ -34,11 +34,12 @@ const statusPlugin = require('fastify-status');
 
 const app = fastify();
 app.register(statusPlugin, {
-  endpoint: '/status',
-  method: 'GET',
-  hide: true, // for fastify-oas and fastify-swagger plugins
+  info: '/__info__',
+  alive: '/__alive__',
 });
 ```
+
+Use `alive` for healthchecks and `info` to get information and some stats of your server.
 
 <sub>[Back to top](#toc)</sub>
 
@@ -46,15 +47,18 @@ app.register(statusPlugin, {
 
 ```js
 {
-  name: 'fastify-status', // your server name from package.json
-  version: '1.0.0', // your server version from package.json
-  now: 2018-08-15T12:18:14.284Z,
-  uptime: '0d 00:00:01',
-  uptimeSec: 0.817,
-  title: 'node',
-  fastify: '1.9.0',
-  responseTime: 0.0001
-  runtime: { node: 'v10.8.0' }
+  uptime: '0d 0h 0m 10s',
+  memory: {
+    rss: '50Mb',
+    external: '40Mb',
+    heapTotal: '30Mb',
+    heapUsed: '20Mb',
+  },
+  start: '2020-05-10T07:41:20.389Z',
+  env: 'test',
+  name: 'my-server',
+  version: '1.0.0',
+  node: 'v14.0.0'
 }
 ```
 

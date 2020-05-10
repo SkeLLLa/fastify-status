@@ -1,15 +1,27 @@
 module.exports = {
-  extends: ['eslint:recommended', 'google'],
+  root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 11,
   },
+  extends: ['plugin:prettier/recommended', 'eslint:recommended'],
   env: {
-    es6: true,
     node: true,
-    jest: false,
+    es6: true,
+    browser: true,
   },
+  overrides: [
+    {
+      files: ['**/*.spec.js', '**/__mocks__/**/*.js'],
+      env: {
+        jest: true,
+      },
+      plugins: ['jest'],
+      ...require('eslint-plugin-jest').configs.recommended,
+    },
+  ],
   rules: {
-    'new-cap': ['error', {capIsNewExceptions: ['ObjectId', 'Fastify']}],
+    'new-cap': ['error', { capIsNewExceptions: ['ObjectId', 'Fastify'] }],
     'max-len': [
       'error',
       {
@@ -22,10 +34,5 @@ module.exports = {
         ignoreTemplateLiterals: true,
       },
     ],
-    indent: ['error', 2, {SwitchCase: 1}],
-    'spaced-comment': ['error', 'always', {markers: ['/']}],
-    'no-console': 'warn',
-    'valid-jsdoc': 'off',
-    'require-jsdoc': 'off',
   },
 };

@@ -1,25 +1,7 @@
 {
   "name": "fastify-status",
   "version": "1.1.2",
-  "main": "lib/index.js",
-  "config": {
-    "releaseBranch": "master"
-  },
-  "scripts": {
-    "changelog": "changelog -u https://gitlab.com/m03geek/server-status",
-    "check-branch": "if test \"$(git rev-parse --abbrev-ref HEAD)\" = \"$npm_package_config_releaseBranch\" ; then exit 0 ; else  echo \"Not on '$npm_package_config_releaseBranch' branch\" && exit1 ; fi",
-    "lint": "eslint .",
-    "postversion": "git push && git push --tags",
-    "preversion": "npm run check-branch && npm run lint && npm run unit",
-    "test": "npm audit && npm run lint && npm run unit",
-    "unit": "exit 0",
-    "version": "changelog && git add -u",
-    "pub": "npm publish --access=public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SkeLLLa/fastify-status.git"
-  },
+  "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring.",
   "keywords": [
     "fastify",
     "status",
@@ -27,36 +9,66 @@
     "fastify-plugin",
     "server-status"
   ],
-  "author": "m03geek",
-  "license": "MIT",
+  "homepage": "https://gitlab.com/m03geek/fastify-status#README",
   "bugs": {
     "url": "https://gitlab.com/m03geek/fastify-status/issues"
   },
-  "homepage": "https://gitlab.com/m03geek/fastify-status#README",
-  "dependencies": {
-    "@m03geek/server-status": "^1.1.1",
-    "fastify-plugin": "^1.6.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkeLLLa/fastify-status.git"
   },
+  "license": "MIT",
+  "author": "m03geek",
+  "main": "lib/index.js",
   "directories": {
-    "test": "__tests__",
-    "lib": "lib"
+    "lib": "lib",
+    "test": "__tests__"
   },
   "files": [
     "lib/**/*.js",
     "lib/**/*.ts"
   ],
-  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "pub": "npm publish --access=public",
+    "release": "git add -A && standard-version -a",
+    "test": "npm audit --production && npm run lint && npm run unit",
+    "unit": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.6.1",
+    "pkg-dir": "^4.2.0",
+    "pretty-ms": "^7.0.0"
+  },
   "devDependencies": {
-    "@types/jest": "^23.3.14",
-    "@types/node": "^10.17.9",
-    "eslint": "^5.16.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^25.0.0",
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
-    "fastify": "^1.14.6",
-    "generate-changelog": "^1.8.0",
-    "jest": "^24.6.0"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.10.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "fastify": "^2.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-packagejson": "^2.2.3",
+    "pretty-quick": "^2.0.1",
+    "standard-version": "^8.0.0",
+    "typescript": "^3.8.3"
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring."
+  "peerDependencies": {
+    "fastify": "*"
+  }
 }
