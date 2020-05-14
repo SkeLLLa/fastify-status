@@ -41,6 +41,8 @@ app.register(statusPlugin, {
 
 Use `alive` for healthchecks and `info` to get information and some stats of your server.
 
+If `info` or `alive` is not present in config, then apropriate route will not be added.
+
 <sub>[Back to top](#toc)</sub>
 
 ## Format
