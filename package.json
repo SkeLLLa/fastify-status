@@ -1,6 +1,6 @@
 {
   "name": "fastify-status",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring.",
   "keywords": [
     "fastify",

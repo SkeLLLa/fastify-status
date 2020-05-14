@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://gitlab.com/m03geek/fastify-status/compare/v2.0.1...v2.1.0) (2020-05-14)
+
+### Features
+
+- don't add route if parameter missing ([5ebafa5](https://gitlab.com/m03geek/fastify-status/commit/5ebafa5c4829929fe2e52f5e156a1bb01196df23))
+
 ### [2.0.1](https://gitlab.com/m03geek/fastify-status/compare/v2.0.0...v2.0.1) (2020-05-10)
 
 ### Bug Fixes
