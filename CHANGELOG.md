@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/SkeLLLa/fastify-status/compare/v2.2.0...v2.2.1) (2020-05-24)
+
+### Bug Fixes
+
+- clean package from junk ([d7b12fd](https://github.com/SkeLLLa/fastify-status/commit/d7b12fdcaa805f36a9792149793adfe7be6d04f6))
+
 ## [2.2.0](https://github.com/SkeLLLa/fastify-status/compare/v2.1.0...v2.2.0) (2020-05-24)
 
 ### Features
