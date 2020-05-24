@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/SkeLLLa/fastify-status/compare/v2.1.0...v2.2.0) (2020-05-24)
+
+### Features
+
+- tests, actions, logo linting ([40cd26d](https://github.com/SkeLLLa/fastify-status/commit/40cd26d42903caa966239b5c245de11ae3903ab9))
+
+### Misc
+
+- clean package.json ([4fe4923](https://github.com/SkeLLLa/fastify-status/commit/4fe4923085cd936ea6bfc6e3a90556d764f1a3ad))
+- deps fix ([6c213cb](https://github.com/SkeLLLa/fastify-status/commit/6c213cb4b1f1b5ab4fbe7aaa3e78fe8456590be1))
+
 ## [2.1.0](https://gitlab.com/m03geek/fastify-status/compare/v2.0.1...v2.1.0) (2020-05-14)
 
 ### Features
