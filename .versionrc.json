@@ -1,7 +1,4 @@
 {
-  "issueUrlFormat": "https://gitlab.com/m03geek/{{repository}}/issues/{{id}}",
-  "commitUrlFormat": "https://gitlab.com/m03geek/{{repository}}/commit/{{hash}}",
-  "compareUrlFormat": "https://gitlab.com/m03geek/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
   "types": [
     { "type": "feat", "section": "Features" },
     { "type": "fix", "section": "Bug Fixes" },

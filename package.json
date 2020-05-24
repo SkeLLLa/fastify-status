@@ -3,15 +3,16 @@
   "version": "2.1.0",
   "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring.",
   "keywords": [
-    "fastify",
-    "status",
-    "plugin",
     "fastify-plugin",
+    "status",
+    "fastify",
+    "plugin",
+    "healthcheck",
     "server-status"
   ],
   "homepage": "https://gitlab.com/m03geek/fastify-status#README",
   "bugs": {
-    "url": "https://gitlab.com/m03geek/fastify-status/issues"
+    "url": "https://github.com/SkeLLLa/fastify-status/issues"
   },
   "repository": {
     "type": "git",
@@ -21,19 +22,16 @@
   "author": "m03geek",
   "main": "lib/index.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
-  "files": [
-    "lib/**/*.js",
-    "lib/**/*.ts"
-  ],
   "scripts": {
+    "get-changelog": "conventional-changelog -r 2 -p angular",
     "lint": "eslint .",
     "pub": "npm publish --access=public",
     "release": "git add -A && standard-version -a",
     "test": "npm audit --production && npm run lint && npm run unit",
-    "unit": "jest"
+    "unit": "jest",
+    "postunit": "codecov || true"
   },
   "husky": {
     "hooks": {
@@ -49,10 +47,12 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@types/jest": "^25.0.0",
-    "@types/node": "^13.13.5",
-    "@typescript-eslint/parser": "^2.31.0",
-    "eslint": "^7.0.0",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "codecov": "^3.7.0",
+    "conventional-changelog-cli": "^2.0.34",
+    "eslint": "~7.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.18.2",
@@ -66,7 +66,7 @@
     "prettier-plugin-packagejson": "^2.2.3",
     "pretty-quick": "^2.0.1",
     "standard-version": "^8.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.3"
   },
   "peerDependencies": {
     "fastify": "*"

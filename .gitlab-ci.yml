@@ -21,26 +21,6 @@ codestyle:
     - npm ci
     - npm test
 
-node:12:
-  stage: test
-  image: node:12
-  only:
-    - /^v\d+\.\d+\.\d+(-rc.\d+|)$/
-  script:
-    - npm i
-    - npm run unit
-  coverage: /^All files[^|]*\|[^|]*\s+([\d\.]+)/
-
-node:14:
-  stage: test
-  image: node:14
-  only:
-    - /^v\d+\.\d+\.\d+(-rc.\d+|)$/
-  script:
-    - npm i
-    - npm run unit
-  coverage: /^All files[^|]*\|[^|]*\s+([\d\.]+)/
-
 node:latest:
   stage: test
   image: node:latest

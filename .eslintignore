@@ -5,3 +5,7 @@ node_modules/
 .vscode/
 static/
 **/*.xxx.*
+dist/
+example/**/*
+.eslintrc.js
+jest.config.js

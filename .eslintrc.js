@@ -4,15 +4,16 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
   },
-  extends: ['plugin:prettier/recommended', 'eslint:recommended'],
+  extends: ['eslint:recommended', 'google', 'prettier'],
+  plugins: ['prettier', 'sort-requires'],
   env: {
     node: true,
     es6: true,
-    browser: true,
+    jest: false,
   },
   overrides: [
     {
-      files: ['**/*.spec.js', '**/__mocks__/**/*.js'],
+      files: ['**/__tests__/**/*', '**/__mocks__/**/*'],
       env: {
         jest: true,
       },
@@ -21,18 +22,7 @@ module.exports = {
     },
   ],
   rules: {
-    'new-cap': ['error', { capIsNewExceptions: ['ObjectId', 'Fastify'] }],
-    'max-len': [
-      'error',
-      {
-        code: 80,
-        comments: 999,
-        ignoreComments: true,
-        ignoreStrings: true,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
+    'prettier/prettier': 'error',
+    'sort-requires/sort-requires': 'off',
   },
 };
