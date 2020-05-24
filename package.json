@@ -27,7 +27,6 @@
   "scripts": {
     "get-changelog": "conventional-changelog -r 2 -p angular",
     "lint": "eslint .",
-    "pub": "npm publish --access=public",
     "release": "git add -A && standard-version -a",
     "test": "npm audit --production && npm run lint && npm run unit",
     "unit": "jest",
