@@ -1,6 +1,6 @@
 {
   "name": "fastify-status",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "Returns common info about fastify server. Could be used for healthchecks and status monitoring.",
   "keywords": [
     "fastify-plugin",
@@ -44,7 +44,7 @@
     "pretty-ms": "^7.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.0",
