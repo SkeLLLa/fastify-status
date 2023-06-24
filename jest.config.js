@@ -4,6 +4,6 @@ module.exports = {
   verbose: true,
   testMatch: ['**/__tests__/**/*.spec.js'],
   testPathIgnorePatterns: ['/node_modules/', '/build/', '/static/'],
-  coverageReporters: ['lcov', 'text'],
+  coverageReporters: ['lcov', 'text', 'json'],
   collectCoverageFrom: ['lib/**/*.js'],
 };
