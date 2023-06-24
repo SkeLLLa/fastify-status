@@ -22,6 +22,9 @@ Returns common info about fastify server. Could be used for healthchecks and sta
   - [Installation](#installation)
   - [Usage](#usage)
   - [Format](#format)
+  - [Changelog](#changelog)
+  - [See also](#see-also)
+  - [License](#license)
 
 ## Installation
 
