@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "fastify-plugin": "^1.6.1",
+    "fastify-plugin": "^2.0.0",
     "pkg-dir": "^4.2.0",
     "pretty-ms": "^7.0.0"
   },
